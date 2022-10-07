@@ -1,1 +1,1 @@
-worker: pnpm build && pnpm start
+worker: pnpm start
