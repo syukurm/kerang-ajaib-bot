@@ -8,7 +8,8 @@
   "type": "module",
   "main": "dist/index.js",
   "scripts": {
-    "build": "tsc",
+    "build": "pnpm generate && pnpm build:tsc",
+    "build:tsc": "tsc",
     "dev": "cross-env NODE_ENV=development ts-node -T src/index.ts",
     "generate": "prisma generate",
     "start": "cross-env NODE_ENV=production node --experimental-specifier-resolution=node dist/index.js",
@@ -18,22 +19,22 @@
   "dependencies": {
     "@discordx/importer": "^1.1.10",
     "@discordx/utilities": "^5.1.0",
-    "@prisma/client": "^4.3.1",
+    "@prisma/client": "^4.4.0",
     "consola": "^2.15.3",
     "cross-env": "^7.0.3",
-    "discord.js": "^14.4.0",
-    "discordx": "^11.3.0",
-    "dotenv": "^16.0.2",
+    "discord.js": "^14.5.0",
+    "discordx": "^11.4.0",
+    "dotenv": "^16.0.3",
     "envsafe": "^2.0.3",
     "reflect-metadata": "^0.1.13",
     "tslib": "^2.4.0",
     "typedi": "^0.10.0"
   },
   "devDependencies": {
-    "@types/node": "^18.7.18",
-    "@typescript-eslint/eslint-plugin": "^5.38.0",
-    "@typescript-eslint/parser": "^5.38.0",
-    "eslint": "^8.23.1",
+    "@types/node": "^18.8.3",
+    "@typescript-eslint/eslint-plugin": "^5.39.0",
+    "@typescript-eslint/parser": "^5.39.0",
+    "eslint": "^8.24.0",
     "eslint-config-adjunct": "^4.11.2",
     "eslint-config-airbnb-typescript": "^17.0.0",
     "eslint-config-auto": "^0.7.3",
@@ -56,11 +57,11 @@
     "eslint-plugin-simple-import-sort": "^8.0.0",
     "eslint-plugin-sonarjs": "^0.15.0",
     "eslint-plugin-switch-case": "^1.1.2",
-    "eslint-plugin-unicorn": "^43.0.2",
+    "eslint-plugin-unicorn": "^44.0.2",
     "nodemon": "^2.0.20",
     "prettier": "^2.7.1",
     "prisma": "^4.4.0",
     "ts-node": "^10.9.1",
-    "typescript": "4.8.3"
+    "typescript": "4.8.4"
   }
 }
