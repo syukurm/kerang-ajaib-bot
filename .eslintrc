@@ -1,0 +1,43 @@
+{
+  "extends": [
+    "plugin:@typescript-eslint/strict",
+    "plugin:github/recommended",
+    "plugin:github/typescript",
+    "plugin:regexp/recommended",
+    "auto"
+  ],
+  "plugins": ["github", "regexp", "etc"],
+  "parserOptions": {
+    "project": "tsconfig.json",
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "rules": {
+    "class-methods-use-this": "off",
+
+    "github/array-foreach": "off",
+    "github/no-then": "off",
+
+    "no-secrets/no-secrets": "off",
+
+    "i18n-text/no-en": "off",
+
+    "import/extensions": "off",
+    "import/no-named-as-default": "off",
+    "import/prefer-default-export": "off",
+
+    "filenames/match-regex": "off",
+
+    "sonarjs/cognitive-complexity": "off",
+
+    "etc/no-assign-mutated-array": "error",
+    "etc/no-const-enum": "error",
+    "etc/no-deprecated": "error",
+    "etc/no-implicit-any-catch": "error",
+    "etc/no-internal": "error",
+    "etc/no-misused-generics": "error",
+    "etc/prefer-interface": "error",
+    "etc/throw-error": "error",
+    "etc/underscore-internal": "error"
+  }
+}
